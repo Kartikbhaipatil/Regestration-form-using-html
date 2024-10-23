@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 10;
+            padding: 20px;
+        }   
+        form{
+            background-color: #99ba4b;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px;
+        }
+        .border{
+            background-color: rgb(192, 213, 120);
+            border: 2px solid #ccc;
+            height: auto;
+            padding: 3px;
+            max-width: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .section{
+            margin-bottom: 20px;
+        }
+        .section h2{
+            margin-bottom: px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            width: 55%;
+            height: 25px;
+            padding: 1px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 40px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="radio"]{
+            margin-right: 5px;
+        }
+        button{
+            background-color: #5a7d22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+        
+
+    </style>
+    <body>
+        <form>
+            <div class="section">
+                <h2>Step 1: Your details</h2>
+                    <div class="border">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="text" id="name" name="name" placeholder="First and last name" required>
+                    </div>
+                    <div class="border">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" id="email" name="email" placeholder="exaple@domain.com" required>
+                    </div>
+                    <div class="border">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="phone" name="phone" placeholder="Ex: +91 99999 77777" required>
+                    </div>
+                
+            
+            </div>
+
+            
+                <h2>Step 2: Delivery address</h2>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+                </div>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;Post Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="postcode" name="postcode" placeholder="000999"o9o9o]  required>
+                </div>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="country" name="country"  required>
+                </div>
+                
+            
+
+                <h2>Step 3: Card details</h2>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Card type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br></br>
+                    <input type="radio" id="visa" name="cardtype" value="Visa"> VISA
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="amex" name="cardtype" value="AmEx" >AmEx
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="mastercard" name="cardtype" value="Mastercard" >Mastercard
+                  
+                </div>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Card Number&nbsp;
+                    <input type="text" id="cardnumber " name="cardnumber" required>
+                </div>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;&nbsp; Security code
+                    <input type="text" id="securitycode " name="securitycode" required>
+                </div>
+                <div class="border">
+                    &nbsp;&nbsp;&nbsp;&nbsp; Name of card
+                    <input type="text" id="cardname " name="cardname" placeholder="Exact name as on the card" required> 
+                </div>
+                
+            
+
+            <button type="submit" >BUY IT!</button>
+        </form>
+    </body>
+</html>
